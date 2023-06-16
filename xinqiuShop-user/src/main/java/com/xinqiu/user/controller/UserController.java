@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
-
     @RequestMapping("/get/{id}")
     public User get(@PathVariable("id") Integer id){
         log.info("获取用户方法被调用了");

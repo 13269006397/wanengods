@@ -3,3 +3,5 @@ spring:
     name: Order
 server:
   port: 8083
+logging:
+  config: classpath:logback.xml
