@@ -6,5 +6,7 @@ public interface UserService {
 
     User getUserById(int id);
 
+    User addOrderAndProduct(int id);
+
 
 }

@@ -38,13 +38,17 @@ public class OrderController {
 
         // 组装订单
         Order order = new Order();
-        order.setUname(u.getUsername());
-        order.setUid(u.getUid());
-        order.setPprice(p.getPprice());
-        order.setPname(p.getPname());
-        order.setPid(p.getPid());
+        if (null != u){
+            order.setUname(u.getUsername());
+            order.setUid(u.getUid());
+        }
+        if (null != p){
+            order.setPprice(p.getPprice());
+            order.setPname(p.getPname());
+            order.setPid(p.getPid());
+            order.setPnumber(p.getStock());
+        }
         order.setOid(new Random().nextInt(1000000000));//订单号随机生成
-        order.setPnumber(p.getStock());
         log.info("准备插入订单库，数据为："+order);
 
         // 保存订单
@@ -54,4 +58,5 @@ public class OrderController {
         log.info("<--- 调用订单生成方法结束 --->");
         return order;
     }
+
 }

@@ -9,7 +9,7 @@ import lombok.Data;
 @TableName("t_product")
 public class Product {
 
-    @TableId(value = "pid", type = IdType.AUTO)
+    @TableId
     private Integer pid;//主键
     private String pname;//商品名称
     private Double pprice;//商品价格

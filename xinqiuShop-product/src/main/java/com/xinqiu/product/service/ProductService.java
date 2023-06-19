@@ -6,4 +6,6 @@ public interface ProductService {
 
     Product getProductById(int id);
 
+    Product add(Product product);
+
 }

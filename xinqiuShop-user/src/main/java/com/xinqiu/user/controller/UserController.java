@@ -24,4 +24,14 @@ public class UserController {
         log.info("获取用户方法调用结束,返回参数为："+resultUser);
         return resultUser;
     }
+
+    @RequestMapping("/add/order/{id}")
+    public User add(@PathVariable("id") Integer id){
+        log.info("用户新增订单和商品方法被调用");
+        User user = userService.addOrderAndProduct(id);
+        log.info("获取用户方法调用结束,返回参数为："+user);
+        return user;
+    }
+
+
 }

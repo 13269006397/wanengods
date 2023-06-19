@@ -16,4 +16,11 @@ public class ProductServiceImpl implements ProductService {
     public Product getProductById(int id) {
         return productMapper.selectById(id);
     }
+
+    @Override
+    public Product add(Product product) {
+        productMapper.insert(product);
+        Product resultProduct = productMapper.selectById(product.getPid());
+        return resultProduct;
+    }
 }
