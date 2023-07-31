@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/xinqiuShop-user/pom.xml" />
         <option value="$PROJECT_DIR$/xinqiuShop-product/pom.xml" />
         <option value="$PROJECT_DIR$/xinqiuShop-order/pom.xml" />
+        <option value="$PROJECT_DIR$/xinqiuShop-eureka/pom.xml" />
       </list>
     </option>
   </component>

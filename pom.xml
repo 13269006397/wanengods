@@ -12,6 +12,7 @@
         <module>xinqiuShop-user</module>
         <module>xinqiuShop-product</module>
         <module>xinqiuShop-order</module>
+        <module>xinqiuShop-eureka</module>
     </modules>
     <packaging>pom</packaging>
 

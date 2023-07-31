@@ -9,9 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="xinqiuShop-common" />
         <module name="xinqiuShop-product" />
+        <module name="xinqiuShop-eureka" />
         <module name="xinqiuShop-user" />
         <module name="xinqiuShop-order" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
