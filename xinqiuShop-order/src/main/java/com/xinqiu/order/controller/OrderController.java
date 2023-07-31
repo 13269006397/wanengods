@@ -30,10 +30,10 @@ public class OrderController {
         // 要在订单微服务中调用 用户微服务、商品微服务。 也就意味这跨项目调用
         // 通过restTemplate调用用户/商品微服务
         log.info("准备调用根据id查询用户方法 --->");
-        User u = restTemplate.getForObject("http://localhost:8081/user/get/" + uid, User.class);
+        User u = restTemplate.getForObject("http://User/user/get/" + uid, User.class);
         log.info("调用用户查询结束，查询用户id:"+uid + "返回结果为"+u);
         log.info("准备调用根据id查询商品方法 --->");
-        Product p = restTemplate.getForObject("http://localhost:8082/product/get/" + pid, Product.class);
+        Product p = restTemplate.getForObject("http://Product/product/get/" + pid, Product.class);
         log.info("调用商品查询结束，查询商品id:"+pid + "返回结果为"+p);
 
         // 组装订单
