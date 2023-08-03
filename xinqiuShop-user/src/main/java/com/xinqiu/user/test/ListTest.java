@@ -4,9 +4,20 @@ import com.alibaba.fastjson.JSON;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ListTest {
+
+
+    public static void main(String[] args) {
+
+        String s = "abcdefg";
+        int offset = 3;
+
+        char c = s.charAt(offset - 1);
+        System.out.println(c);
+
+
+    }
 
     /**
      * list排序
