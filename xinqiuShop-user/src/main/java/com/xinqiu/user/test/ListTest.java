@@ -10,6 +10,7 @@ public class ListTest {
 
     public static void main(String[] args) {
 
+        //  1111
         String s = "abcdefg";
         int offset = 3;
 
